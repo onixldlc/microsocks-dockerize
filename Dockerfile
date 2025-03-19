@@ -5,12 +5,6 @@ RUN apk update && apk upgrade --update --no-cache
 WORKDIR /microsocks
 COPY . .
 
-# for interactive shell
-RUN apk add --no-cache \
-    bash \
-    coreutils 
-
-# for building
 RUN apk add --no-cache \
     dumb-init \
     build-base \
