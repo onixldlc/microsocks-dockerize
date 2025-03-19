@@ -1,0 +1,6 @@
+services:
+  microsocks:
+    image: microsocks
+    command: -u test -P test #optional
+    ports:
+      - "1080:1080"
